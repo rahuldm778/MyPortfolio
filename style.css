@@ -8,6 +8,7 @@
 html {
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
+    
 }
 a {
     text-decoration: none;
@@ -244,9 +245,11 @@ a {
 #skills .skill{
     flex-direction: column;
     text-align: center;
-    max-width: 1500px;
-    margin: 0 auto;
+    max-width: 1600px;
+    
     padding: 100px 0;
+    background: linear-gradient(to right, #ffcaca ,white,white, white,#ffcaca);
+    
 }
 #skills .container {
     min-height: 100vh;
@@ -277,9 +280,78 @@ a {
 #skills .skill-des h3 {
     font-size: 20px;
 }
+#skills .skill-name{
+    display: flex;
+    justify-content: space-between;
+}
+.skills li{
+	margin: 20px 0;
+	list-style: none;
+	padding-top: 20px;
+	color: gray;
+	
+	
+}
+.bar{
+	background: #aaabad;
+	display: block;
+	height: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 5px crimson;
+}
+
+.bar span{
+	height: 5px;
+	float: left;
+	background: crimson;
+	
+
+}
+
+.html {
+	width: 90%;
+	animation: html 2s;
+}
+
+.css {
+	width: 80%;
+	animation: css 2s;
+}
+.sql {
+	width: 60%;
+	animation: jquery 2s;
+}
+.mongodb {
+    width: 60%;
+}
+.javascript {
+	width: 70%;
+	animation: javascript 2s;
+}
+.cpp {
+	width: 80%;
+	animation: cpp 2s;
+}
+.dsalgo {
+	width: 70%;
+	animation: dsalgo 2s;
+}
+.react {
+	width: 50%;
+	animation: react 2s;
+}
+.node {
+	width: 55%;
+	animation: node 2s;
+}
 /*end of skills section*/
 
 /*Projects*/
+#projects {
+    background: linear-gradient(to right, #ffcaca , white, white,#ffcaca);
+}
 #projects .section-title {
     font-size: 4rem;
     font-weight: 300;
@@ -355,12 +427,16 @@ a {
 /*end Projects section*/
 
 /*about us*/
+#about {
+    background: linear-gradient(to right, #ffcaca , white, white, white,#ffcaca);
+}
 #about .about {
     flex-direction: column-reverse;
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
+    
 }
 #about .container {
     min-height: 100vh;
@@ -370,10 +446,12 @@ a {
     justify-content: center;
 }
 #about .col-left {
+    margin: 25px;
     width: 300px;
     height: 300px;
 }
 #about .col-left:hover {
+    margin: 0px;
     width: 350px;
     height: 350px;
 }
@@ -406,10 +484,14 @@ a {
 /*end about us*/
 
 /*contact section*/
+#contact {
+    background: linear-gradient(to right, #ffcaca , white, white, white,#ffcaca);
+}
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 #contact .container {
     min-height: 100vh;
@@ -436,6 +518,7 @@ a {
 }
 #contact .contact-item:hover{
     box-shadow: 0 0 20px;
+    margin: 10px auto;
 }
 #contact .contact-info h2{
     font-size: 1.3rem;
@@ -570,5 +653,9 @@ a {
     #projects .all-projects .project-item{    
         width:60%;
         
+    }
+
+    #skills .skill-bottom {
+        min-width: 25vw;
     }
 }
